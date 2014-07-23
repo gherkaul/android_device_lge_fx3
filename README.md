@@ -9,6 +9,6 @@ CWM Recovery 6.0.3.7
 
 $ . build/envsetup.sh
 
-$ lunch cm_fx3-eng
+$ lunch cm_fx3s-eng
 
-$ . build/tools/device/makerecoveries.sh cm_fx3-eng
+$ . build/tools/device/makerecoveries.sh cm_fx3s-eng

@@ -21,4 +21,6 @@ To compile rom:
 
 $ make clean && make clobber
 
-$ make -j4
+$ . build/envsetup.sh
+
+$ brunch cm_fx3s-eng

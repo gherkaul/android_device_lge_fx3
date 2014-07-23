@@ -1,4 +1,4 @@
-android_device_lge_fx3s
-=======================
+Work in Progress
+================
 
-VirginMobile Optimus f3 VM720 Device Tree
+Device tree for LG Optimus F3 (Virgin Mobile)

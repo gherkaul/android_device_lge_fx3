@@ -3,11 +3,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # The gps config appropriate for this device
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
-$(call inherit-product-if-exists, vendor/lge/fx3s/fx3s-vendor.mk)
+$(call inherit-product-if-exists, vendor/lge/fx3/fx3-vendor.mk)
 
-DEVICE_PACKAGE_OVERLAYS += device/lge/fx3s/overlay
+DEVICE_PACKAGE_OVERLAYS += device/lge/fx3/overlay
 
-LOCAL_PATH := device/lge/fx3s
+LOCAL_PATH := device/lge/fx3
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 	LOCAL_KERNEL := $(LOCAL_PATH)/kernel
 else
@@ -20,7 +20,7 @@ PRODUCT_COPY_FILES += \
 $(call inherit-product, build/target/product/full.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
-PRODUCT_NAME := full_fx3s
-PRODUCT_DEVICE := fx3s
+PRODUCT_NAME := full_fx3
+PRODUCT_DEVICE := fx3
 
 $(call inherit-product, hardware/qcom/msm8960/msm8960.mk)

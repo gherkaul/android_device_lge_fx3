@@ -25,9 +25,10 @@ BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000
 
 TARGET_PREBUILT_KERNEL := device/lge/fx3s/kernel
+LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 
 TARGET_KERNEL_CONFIG := fx3_spcs_defconfig
-TARGET_KERNEL_SOURCE := kernel/lge/fx3
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.4.3
 
 # Linaro Optimization
 TARGET_USE_O3 := true

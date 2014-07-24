@@ -34,3 +34,11 @@ export CROSS_COMPILE=arm-eabi-
 export PATH=$PATH:~/android/source/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin
 ```
 
+**Requirements**
+```
+$ cd ~/
+$ rm -rf hardware/qcom/media
+$ rm -rf hardware/qcom/msm8960
+$ git clone https://android.googlesource.com/platform/hardware/qcom/media
+$ git clone https://android.googlesource.com/platform/hardware/qcom/msm8960
+```

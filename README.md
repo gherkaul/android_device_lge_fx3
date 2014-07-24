@@ -8,17 +8,17 @@ Device tree for LG Optimus F3 (Virgin Mobile)
 To setup build enviornment:
 ```
 $ . build/envsetup.sh
-$ lunch cm_fx3s-eng
+$ lunch cm_fx3-eng
 ```
 **To build cwm recovery:**
 ```
-$ . build/tools/device/makerecoveries.sh cm_fx3s-eng
+$ . build/tools/device/makerecoveries.sh cm_fx3-eng
 ```
 **To compile rom:**
 ```
 $ make clean
 $ . build/envsetup.sh
-$ brunch cm_fx3s-eng
+$ brunch cm_fx3-eng
 ```
 
 

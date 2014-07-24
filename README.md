@@ -24,7 +24,7 @@ $ brunch cm_fx3s-eng
 ```
 
 
-# Current ~/.bashrc setup:
+### Current ~/.bashrc setup:
 ```
 export PATH=~/bin:$PATH
 export USE_CCACHE=1

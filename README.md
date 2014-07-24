@@ -3,8 +3,7 @@ Work in Progress
 
 Device tree for LG Optimus F3 (Virgin Mobile)
 
-**Working CWM Recovery for the VM Optimus F3:**
-CWM Recovery 6.0.3.7
+**Working CWM Recovery for the VM Optimus F3:** (CWM Recovery 6.0.3.7)
 
 To setup build enviornment:
 ```

@@ -36,7 +36,7 @@ export PATH=$PATH:~/android/source/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/b
 
 **Requirements**
 ```
-$ cd ~/
+$ cd ~/android/source
 $ rm -rf hardware/qcom/media
 $ rm -rf hardware/qcom/msm8960
 $ cd hardware/qcom

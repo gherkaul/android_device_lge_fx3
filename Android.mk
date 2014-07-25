@@ -23,11 +23,12 @@ include $(CLEAR_VARS)
 
 # Radio Firmware linking
 FIRMWARE_RADIO_IMAGES := \
-    modem_f1.b00 modem_f1.b01 modem_f1.b02 modem_f1.b03 modem_f1.b04 modem_f1.b05 \
-    modem_f1.b06 modem_f1.b07 modem_f1.b08 modem_f1.b09 modem_f1.b10 modem_f1.b11 \
-    modem_f1.b13 modem_f1.b14 modem_f1.b21 modem_f1.b22 modem_f1.b23 modem_f1.b25 \
-    modem_f1.b26 modem_f1.b29 modem_f1.mdt modem.b00 modem.b01 modem.b02 modem.b03 \
-    modem.b04 modem.b05 modem.b06 modem.b07 modem.b08 modem.b09 modem.b10 modem.mdt
+    modem.b00 modem.b01 modem.b02 modem.b03 modem.b04 modem.b05 \
+    modem.b06 modem.b07 modem.b08 modem.b09 modem.b10 modem.mdt \
+    modem_fw.b00 modem_fw.b01 modem_fw.b02 modem_fw.b03 modem_fw.b04 modem_fw.b05 \
+    modem_fw.b09 modem_fw.b10 modem_fw.b11 modem_fw.b12 modem_fw.b13 modem_fw.b15 \
+    modem_fw.b16 modem_fw.b23 modem_fw.b24 modem_fw.b25 modem_fw.b27 modem_fw.b28 \
+    modem_fw.b31 modem_fw.fli modem_fw.mdt
 
 FIRMWARE_RADIO_SYMLINKS := $(addprefix $(TARGET_OUT_VENDOR)/firmware/,$(notdir $(FIRMWARE_RADIO_IMAGES)))
 $(FIRMWARE_RADIO_SYMLINKS): $(LOCAL_INSTALLED_MODULE)

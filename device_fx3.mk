@@ -68,18 +68,18 @@ PRODUCT_PACKAGES += \
     
 # Ramdisk
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/fstab.qcom:/root/fstab.qcom \
-    $(LOCAL_PATH)/rootdir/init.fx3.rc:/root/init.fx3.rc \
-    $(LOCAL_PATH)/rootdir/init.fx3s.rc:/root/init.fx3s.rc \
-    $(LOCAL_PATH)/rootdir/init.lge.early.rc:/root/init.lge.early.rc \
-    $(LOCAL_PATH)/rootdir/init.lge.rc:/root/init.lge.rc \
-    $(LOCAL_PATH)/rootdir/init.lge.usb.rc:/root/init.lge.usb.rc \
-    $(LOCAL_PATH)/rootdir/init.qcom.rc:/root/init.qcom.rc \
-    $(LOCAL_PATH)/rootdir/init.qcom.usb.rc:/root/init.qcom.usb.rc \
-    $(LOCAL_PATH)/rootdir/init.fota.rc:/root/init.fota.rc \
-    $(LOCAL_PATH)/rootdir/init.fota_update.rc:/root/init.fota_update.rc \
-    $(LOCAL_PATH)/rootdir/ueventd.fx3s.rc:/root/ueventd.fx3s.rc \
-    $(LOCAL_PATH)/rootdir/ueventd.qcom.rc:/root/ueventd.qcom.rc
+    $(LOCAL_PATH)/rootdir/etc/fstab.qcom:/root/fstab.qcom \
+    $(LOCAL_PATH)/rootdir/etc/init.fx3.rc:/root/init.fx3.rc \
+    $(LOCAL_PATH)/rootdir/etc/init.fx3s.rc:/root/init.fx3s.rc \
+    $(LOCAL_PATH)/rootdir/etc/init.lge.early.rc:/root/init.lge.early.rc \
+    $(LOCAL_PATH)/rootdir/etc/init.lge.rc:/root/init.lge.rc \
+    $(LOCAL_PATH)/rootdir/etc/init.lge.usb.rc:/root/init.lge.usb.rc \
+    $(LOCAL_PATH)/rootdir/etc/init.qcom.rc:/root/init.qcom.rc \
+    $(LOCAL_PATH)/rootdir/etc/init.qcom.usb.rc:/root/init.qcom.usb.rc \
+    $(LOCAL_PATH)/rootdir/etc/init.fota.rc:/root/init.fota.rc \
+    $(LOCAL_PATH)/rootdir/etc/init.fota_update.rc:/root/init.fota_update.rc \
+    $(LOCAL_PATH)/rootdir/etc/ueventd.fx3s.rc:/root/ueventd.fx3s.rc \
+    $(LOCAL_PATH)/rootdir/etc/ueventd.qcom.rc:/root/ueventd.qcom.rc
 
 # Qualcomm scripts
 PRODUCT_COPY_FILES += \

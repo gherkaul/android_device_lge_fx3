@@ -33,7 +33,53 @@ endif
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel
+    
+    
+# Boot animation
+TARGET_SCREEN_HEIGHT := 800
+TARGET_SCREEN_WIDTH := 480
 
+# Ramdisk
+PRODUCT_PACKAGES += \
+    fstab.qcom \
+    init.fx3.rc \
+    init.fx3s.rc \
+    init.lge.early.rc \
+    init.lge.rc \
+    init.lge.usb.rc \
+    init.qcom.rc \
+    init.qcom.usb.rc \
+    lgdms.fota.rc \
+    lgdms.fota_update.rc \
+    ueventd.fx3s.rc \
+    ueventd.qcom.rc
+
+# Qualcomm scripts
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/init.qcom.bt.sh:/system/etc/init.qcom.bt.sh \
+    $(LOCAL_PATH)/configs/init.qcom.fm.sh:/system/etc/init.qcom.fm.sh
+
+# QC thermald config
+PRODUCT_COPY_FILES += \
+    (LOCAL_PATH)/configs/thermald-8064.conf:system/etc/thermald-8064.conf \
+    (LOCAL_PATH)/configs/thermald-8930.conf:system/etc/thermald-8930.conf \
+    (LOCAL_PATH)/configs/thermald-8930-empty.conf:system/etc/thermald-8930-empty.conf \
+    (LOCAL_PATH)/configs/thermald-8960.conf:system/etc/thermald-8960.conf \
+    (LOCAL_PATH)/configs/thermald-8960ab.conf:system/etc/thermald-8960ab.conf
+
+PRODUCT_PACKAGES += \
+    libnetcmdiface
+
+# Audio config
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/audio_policy.conf:system/etc/audio_policy.conf \
+    $(LOCAL_PATH)/dsp/snd_soc_msm/snd_soc_msm_Sitar:system/etc/snd_soc_msm/snd_soc_msm_Sitar
+
+# Media config
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/media_profiles.xml:system/etc/media_profiles.xml
+    
+    
 $(call inherit-product, build/target/product/full.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0

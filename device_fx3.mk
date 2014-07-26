@@ -65,6 +65,21 @@ PRODUCT_PACKAGES += \
     lgdms.fota_update.rc \
     ueventd.fx3s.rc \
     ueventd.qcom.rc
+    
+# Ramdisk
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/fstab.qcom:/root/fstab.qcom \
+    $(LOCAL_PATH)/rootdir/init.fx3.rc:/root/init.fx3.rc \
+    $(LOCAL_PATH)/rootdir/init.fx3s.rc:/root/init.fx3s.rc \
+    $(LOCAL_PATH)/rootdir/init.lge.early.rc:/root/init.lge.early.rc \
+    $(LOCAL_PATH)/rootdir/init.lge.rc:/root/init.lge.rc \
+    $(LOCAL_PATH)/rootdir/init.lge.usb.rc:/root/init.lge.usb.rc \
+    $(LOCAL_PATH)/rootdir/init.qcom.rc:/root/init.qcom.rc \
+    $(LOCAL_PATH)/rootdir/init.qcom.usb.rc:/root/init.qcom.usb.rc \
+    $(LOCAL_PATH)/rootdir/init.fota.rc:/root/init.fota.rc \
+    $(LOCAL_PATH)/rootdir/init.fota_update.rc:/root/init.fota_update.rc \
+    $(LOCAL_PATH)/rootdir/ueventd.fx3s.rc:/root/ueventd.fx3s.rc \
+    $(LOCAL_PATH)/rootdir/ueventd.qcom.rc:/root/ueventd.qcom.rc
 
 # Qualcomm scripts
 PRODUCT_COPY_FILES += \

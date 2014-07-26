@@ -61,11 +61,11 @@ PRODUCT_COPY_FILES += \
 
 # QC thermald config
 PRODUCT_COPY_FILES += \
-    (LOCAL_PATH)/configs/thermald-8064.conf:system/etc/thermald-8064.conf \
-    (LOCAL_PATH)/configs/thermald-8930.conf:system/etc/thermald-8930.conf \
-    (LOCAL_PATH)/configs/thermald-8930-empty.conf:system/etc/thermald-8930-empty.conf \
-    (LOCAL_PATH)/configs/thermald-8960.conf:system/etc/thermald-8960.conf \
-    (LOCAL_PATH)/configs/thermald-8960ab.conf:system/etc/thermald-8960ab.conf
+    $(LOCAL_PATH)/configs/thermald-8064.conf:system/etc/thermald-8064.conf \
+    $(LOCAL_PATH)/configs/thermald-8930.conf:system/etc/thermald-8930.conf \
+    $(LOCAL_PATH)/configs/thermald-8930-empty.conf:system/etc/thermald-8930-empty.conf \
+    $(LOCAL_PATH)/configs/thermald-8960.conf:system/etc/thermald-8960.conf \
+    $(LOCAL_PATH)/configs/thermald-8960ab.conf:system/etc/thermald-8960ab.conf
 
 PRODUCT_PACKAGES += \
     libnetcmdiface

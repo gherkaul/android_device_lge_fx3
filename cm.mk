@@ -17,6 +17,6 @@ $(call inherit-product, device/lge/fx3/device_fx3.mk)
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := fx3
 PRODUCT_NAME := cm_fx3
-PRODUCT_BRAND := VirginMobile
-PRODUCT_MODEL := VM720
+PRODUCT_BRAND := lge
+PRODUCT_MODEL := LG-LS720
 PRODUCT_MANUFACTURER := LGE

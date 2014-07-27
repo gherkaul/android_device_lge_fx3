@@ -111,6 +111,34 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_profiles.xml:system/etc/media_profiles.xml
     
+# bin
+PRODUCT_COPY_FILES += \
+    device/lge/fx3/prebuilt/system/bin/ATFWD-daemon:/system/etc/ATFWD-daemon \
+    device/lge/fx3/prebuilt/system/bin/atd:/system/etc/atd \
+    device/lge/fx3/prebuilt/system/bin/bridgemgrd:/system/etc/bridgemgrd \
+    device/lge/fx3/prebuilt/system/bin/cnd:/system/etc/cnd \
+    device/lge/fx3/prebuilt/system/bin/ds_fmc_appd:/system/etc/ds_fmc_appd \
+    device/lge/fx3/prebuilt/system/bin/e2fsck:/system/etc/e2fsck \
+    device/lge/fx3/prebuilt/system/bin/hostapd:/system/etc/hostapd \
+    device/lge/fx3/prebuilt/system/bin/mm-adec-omxaac-test:/system/etc/mm-adec-omxaac-test \
+    device/lge/fx3/prebuilt/system/bin/mm-aenc-omxaac-test:/system/etc/mm-aenc-omxaac-test \
+    device/lge/fx3/prebuilt/system/bin/mm-aenc-omxamr-test:/system/etc/mm-aenc-omxamr-test \
+    device/lge/fx3/prebuilt/system/bin/mm-aenc-omxevrc-test:/system/etc/mm-aenc-omxevrc-test \
+    device/lge/fx3/prebuilt/system/bin/mm-aenc-omxqcelp13-test:/system/etc/mm-aenc-omxqcelp13-test \
+    device/lge/fx3/prebuilt/system/bin/mm-gs-camctrl-test:/system/etc/mm-gs-camctrl-test \
+    device/lge/fx3/prebuilt/system/bin/mm-jpeg-dec-test:/system/etc/mm-jpeg-dec-test \
+    device/lge/fx3/prebuilt/system/bin/mm-jpeg-dec-test-client:/system/etc/mm-jpeg-dec-test-client \
+    device/lge/fx3/prebuilt/system/bin/mm-jpeg-enc-test:/system/etc/mm-jpeg-enc-test \
+    device/lge/fx3/prebuilt/system/binmm-jpeg-enc-test-client:/system/etc/mm-jpeg-enc-test-client \
+    device/lge/fx3/prebuilt/system/bin/mm-jps-enc-test:/system/etc/mm-jps-enc-test \
+    device/lge/fx3/prebuilt/system/bin/mm-mpo-dec-test:/system/etc/mm-mpo-dec-test \
+    device/lge/fx3/prebuilt/system/bin/atd:/system/etc/atd \
+    device/lge/fx3/prebuilt/system/bin/atd:/system/etc/atd \
+    device/lge/fx3/prebuilt/system/bin/atd:/system/etc/atd \
+    device/lge/fx3/prebuilt/system/bin/atd:/system/etc/atd \
+    device/lge/fx3/prebuilt/system/bin/atd:/system/etc/atd \
+    device/lge/fx3/prebuilt/system/bin/atd:/system/etc/atd \device/lge/fx3/prebuilt/system/bin/atd:/system/etc/atd \
+
     
 $(call inherit-product, build/target/product/full.mk)
 

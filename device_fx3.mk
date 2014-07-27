@@ -188,7 +188,6 @@ PRODUCT_COPY_FILES += \
     device/lge/fx3/prebuilt/system/etc/snd_soc_msm/snd_soc_msm_2x_Fusion3:/system/etc/snd_soc_msm/snd_soc_msm_2x_Fusion3 \
     device/lge/fx3/prebuilt/system/etc/snd_soc_msm/snd_soc_msm_2x_Fusion3_auxpcm:/system/etc/snd_soc_msm/snd_soc_msm_2x_Fusion3_auxpcm \
     device/lge/fx3/prebuilt/system/etc/snd_soc_msm/snd_soc_msm_2x_auxpcm:/system/etc/snd_soc_msm/snd_soc_msm_2x_auxpcm \
-    device/lge/fx3/prebuilt/system/etc/snd_soc_msm/snd_soc_msm_Sitar:/system/etc/snd_soc_msm/snd_soc_msm_Sitar \
     device/lge/fx3/prebuilt/system/etc/snd_soc_msm/snd_soc_msm_Sitar_auxpcm:/system/etc/snd_soc_msm/snd_soc_msm_Sitar_auxpcm \
     device/lge/fx3/prebuilt/system/etc/snd_soc_msm/snd_soc_msm_Taiko:/system/etc/snd_soc_msm/snd_soc_msm_Taiko \
     device/lge/fx3/prebuilt/system/etc/snd_soc_msm/snd_soc_msm_auxpcm:/system/etc/snd_soc_msm/snd_soc_msm_auxpcm
@@ -203,7 +202,6 @@ PRODUCT_COPY_FILES += \
     device/lge/fx3/prebuilt/system/etc/OperatorPolicy.xml:/system/etc/OperatorPolicy.xml \
     device/lge/fx3/prebuilt/system/etc/UserPolicy.xml:/system/etc/UserPolicy.xml \
     device/lge/fx3/prebuilt/system/etc/apns-conf.xml:/system/etc/apns-conf.xml \
-    device/lge/fx3/prebuilt/system/etc/audio_policy.conf:/system/etc/audio_policy.conf \
     device/lge/fx3/prebuilt/system/init.goldfish.sh/AAA:/system/etc/init.goldfish.sh \
     device/lge/fx3/prebuilt/system/etc/init.qcom.audio.sh:/system/etc/init.qcom.audio.sh \
     device/lge/fx3/prebuilt/system/etc/init.qcom.bt.sh:/system/etc/init.qcom.bt.sh \
@@ -226,13 +224,7 @@ PRODUCT_COPY_FILES += \
     device/lge/fx3/prebuilt/system/etc/logging_prepare.sh:/system/etc/logging_prepare.sh \
     device/lge/fx3/prebuilt/system/etc/make_packet_log.sh:/system/etc/make_packet_log.sh \
     device/lge/fx3/prebuilt/system/etc/media_codecs.xml:/system/etc/media_codecs.xml \
-    device/lge/fx3/prebuilt/system/etc/media_profiles.xml:/system/etc/media_profiles.xml \
     device/lge/fx3/prebuilt/system/etc/nfcee_access.xml:/system/etc/nfcee_access.xml \
-    device/lge/fx3/prebuilt/system/etc/thermald-8064.conf:/system/etc/thermald-8064.conf \
-    device/lge/fx3/prebuilt/system/etc/thermald-8930-empty.conf:/system/etc/thermald-8930-empty.conf \
-    device/lge/fx3/prebuilt/system/etc/thermald-8930.conf:/system/etc/thermald-8930.conf \
-    device/lge/fx3/prebuilt/system/etc/thermald-8960.conf:/system/etc/thermald-8960.conf \
-    device/lge/fx3/prebuilt/system/etc/thermald-8960ab.conf:/system/etc/thermald-8960ab.conf \
     device/lge/fx3/prebuilt/system/etc/vold.fstab:/system/etc/vold.fstab
     
 # lib/egl

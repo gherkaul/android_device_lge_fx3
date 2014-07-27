@@ -233,8 +233,142 @@ PRODUCT_COPY_FILES += \
     device/lge/fx3/prebuilt/system/etc/thermald-8930.conf:/system/etc/thermald-8930.conf \
     device/lge/fx3/prebuilt/system/etc/thermald-8960.conf:/system/etc/thermald-8960.conf \
     device/lge/fx3/prebuilt/system/etc/thermald-8960ab.conf:/system/etc/thermald-8960ab.conf \
-    device/lge/fx3/prebuilt/system/etc/vold.fstab:/system/etc/vold.fstab \
-    device/lge/fx3/prebuilt/system/etc/AAA:/system/etc/AAA \
+    device/lge/fx3/prebuilt/system/etc/vold.fstab:/system/etc/vold.fstab
+    
+# lib/egl
+PRODUCT_COPY_FILES += \
+    device/lge/fx3/prebuilt/system/lib/egl/egl.cfg:/system/lib/egl/egl.cfg \
+    device/lge/fx3/prebuilt/system/lib/egl/eglsubAndroid.so:/system/lib/egl/eglsubAndroid.so \
+    device/lge/fx3/prebuilt/system/lib/egl/libEGL_adreno200.so:/system/lib/egl/libEGL_adreno200.so \
+    device/lge/fx3/prebuilt/system/lib/egl/libGLES_android.so:/system/lib/egl/libGLES_android.so \
+    device/lge/fx3/prebuilt/system/lib/egl/libGLESv1_CM_adreno200.so:/system/lib/egl/libGLESv1_CM_adreno200.so \
+    device/lge/fx3/prebuilt/system/lib/egl/libGLESv2S3D_adreno200.so:/system/lib/egl/libGLESv2S3D_adreno200.so \
+    device/lge/fx3/prebuilt/system/lib/egl/libGLESv2_adreno200.so:/system/lib/egl/libGLESv2_adreno200.so \
+    device/lge/fx3/prebuilt/system/lib/egl/libq3dtools_adreno200.so:/system/lib/egl/libq3dtools_adreno200.so
+    
+# lib/hw
+PRODUCT_COPY_FILES += \
+    device/lge/fx3/prebuilt/system/lib/hw/camera.msm8960.so:/system/lib/hw/camera.msm8960.so \
+    device/lge/fx3/prebuilt/system/lib/hw/gps.default.so:/system/lib/hw/gps.default.so \
+    device/lge/fx3/prebuilt/system/lib/hw/lights.msm8960.so:/system/lib/hw/lights.msm8960.so
+    
+# lib
+PRODUCT_COPY_FILES += \
+    device/lge/fx3/prebuilt/system/lib/libC2D2.so:/system/lib/libC2D2.so \
+    device/lge/fx3/prebuilt/system/lib/libCommandSvc.so:/system/lib/libCommandSvc.so \
+    device/lge/fx3/prebuilt/system/lib/libDivxDrm.so:/system/lib/libDivxDrm.so \
+    device/lge/fx3/prebuilt/system/lib/libI420colorconvert.so:/system/lib/libI420colorconvert.so \
+    device/lge/fx3/prebuilt/system/lib/libOlaLGECameraJNI_3b.so:/system/lib/libOlaLGECameraJNI_3b.so \
+    device/lge/fx3/prebuilt/system/lib/libOmxAacDec.so:/system/lib/libOmxAacDec.so \
+    device/lge/fx3/prebuilt/system/lib/libOmxVdec.so:/system/lib/libOmxVdec.so \
+    device/lge/fx3/prebuilt/system/lib/libOmxWmaDec.so:/system/lib/libOmxWmaDec.so \
+    device/lge/fx3/prebuilt/system/lib/libOpenCL.so:/system/lib/libOpenCL.so \
+    device/lge/fx3/prebuilt/system/lib/libOpenVG.so:/system/lib/libOpenVG.so \
+    device/lge/fx3/prebuilt/system/lib/libQSEEComAPI.so:/system/lib/libQSEEComAPI.so \
+    device/lge/fx3/prebuilt/system/lib/libacdbloader.so:/system/lib/libacdbloader.so \
+    device/lge/fx3/prebuilt/system/lib/libaudcal.so:/system/lib/libaudcal.so \
+    device/lge/fx3/prebuilt/system/lib/libaudioalsa.so:/system/lib/libaudioalsa.so \
+    device/lge/fx3/prebuilt/system/lib/libc2d2_z180.so:/system/lib/libc2d2_z180.so \
+    device/lge/fx3/prebuilt/system/lib/libcamera_client.so:/system/lib/libcamera_client.so \
+    device/lge/fx3/prebuilt/system/lib/libchromatix_imx074_default_video.so:/system/lib/libchromatix_imx074_default_video.so \
+    device/lge/fx3/prebuilt/system/lib/libchromatix_imx074_preview.so:/system/lib/libchromatix_imx074_preview.so \
+    device/lge/fx3/prebuilt/system/lib/libchromatix_imx074_video_hd.so:/system/lib/libchromatix_imx074_video_hd.so \
+    device/lge/fx3/prebuilt/system/lib/libchromatix_imx074_zsl.so:/system/lib/libchromatix_imx074_zsl.so \
+    device/lge/fx3/prebuilt/system/lib/libchromatix_imx091_default_video.so:/system/lib/libchromatix_imx091_default_video.so \
+    device/lge/fx3/prebuilt/system/lib/libchromatix_imx091_preview.so:/system/lib/libchromatix_imx091_preview.so \
+    device/lge/fx3/prebuilt/system/lib/libchromatix_imx091_video_hd.so:/system/lib/libchromatix_imx091_video_hd.so \
+    device/lge/fx3/prebuilt/system/lib/libchromatix_imx119_default_video.so:/system/lib/libchromatix_imx119_default_video.so \
+    device/lge/fx3/prebuilt/system/lib/libchromatix_imx119_preview.so:/system/lib/libchromatix_imx119_preview.so \
+    device/lge/fx3/prebuilt/system/lib/libchromatix_imx119_vt.so:/system/lib/libchromatix_imx119_vt.so \
+    device/lge/fx3/prebuilt/system/lib/libchromatix_mt9e013_default_video.so:/system/lib/libchromatix_mt9e013_default_video.so \
+    device/lge/fx3/prebuilt/system/lib/libchromatix_mt9e013_preview.so:/system/lib/libchromatix_mt9e013_preview.so \
+    device/lge/fx3/prebuilt/system/lib/libchromatix_mt9e013_video_hfr.so:/system/lib/libchromatix_mt9e013_video_hfr.so \
+    device/lge/fx3/prebuilt/system/lib/libchromatix_ov2720_default_video.so:/system/lib/libchromatix_ov2720_default_video.so \
+    device/lge/fx3/prebuilt/system/lib/libchromatix_ov2720_hfr.so:/system/lib/libchromatix_ov2720_hfr.so \
+    device/lge/fx3/prebuilt/system/lib/libchromatix_ov2720_preview.so:/system/lib/libchromatix_ov2720_preview.so \
+    device/lge/fx3/prebuilt/system/lib/libchromatix_ov2720_zsl.so:/system/lib/libchromatix_ov2720_zsl.so \
+    device/lge/fx3/prebuilt/system/lib/libchromatix_ov5647_default_video.so:/system/lib/libchromatix_ov5647_default_video.so \
+    device/lge/fx3/prebuilt/system/lib/libchromatix_ov5647_preview.so:/system/lib/libchromatix_ov5647_preview.so \
+    device/lge/fx3/prebuilt/system/lib/libchromatix_ov8825_default_video.so:/system/lib/libchromatix_ov8825_default_video.so \
+    device/lge/fx3/prebuilt/system/lib/libchromatix_ov8825_preview.so:/system/lib/libchromatix_ov8825_preview.so \
+    device/lge/fx3/prebuilt/system/lib/libchromatix_ov9726_default_video.so:/system/lib/libchromatix_ov9726_default_video.so \
+    device/lge/fx3/prebuilt/system/lib/libchromatix_ov9726_preview.so:/system/lib/libchromatix_ov9726_preview.so \
+    device/lge/fx3/prebuilt/system/lib/libchromatix_s5k3l1yx_default_video.so:/system/lib/libchromatix_s5k3l1yx_default_video.so \
+    device/lge/fx3/prebuilt/system/lib/libchromatix_s5k3l1yx_hfr_120fps.so:/system/lib/libchromatix_s5k3l1yx_hfr_120fps.so \
+    device/lge/fx3/prebuilt/system/lib/libchromatix_s5k3l1yx_hfr_60fps.so:/system/lib/libchromatix_s5k3l1yx_hfr_60fps.so \
+    device/lge/fx3/prebuilt/system/lib/libchromatix_s5k3l1yx_hfr_90fps.so:/system/lib/libchromatix_s5k3l1yx_hfr_90fps.so \
+    device/lge/fx3/prebuilt/system/lib/libchromatix_s5k3l1yx_preview.so:/system/lib/libchromatix_s5k3l1yx_preview.so \
+    device/lge/fx3/prebuilt/system/lib/libchromatix_s5k3l1yx_video_hd.so:/system/lib/libchromatix_s5k3l1yx_video_hd.so \
+    device/lge/fx3/prebuilt/system/lib/libchromatix_s5k3l1yx_zsl.so:/system/lib/libchromatix_s5k3l1yx_zsl.so \
+    device/lge/fx3/prebuilt/system/lib/libchromatix_s5k4e1_default_video.so:/system/lib/libchromatix_s5k4e1_default_video.so \
+    device/lge/fx3/prebuilt/system/lib/libchromatix_s5k4e1_preview.so:/system/lib/libchromatix_s5k4e1_preview.so \
+    device/lge/fx3/prebuilt/system/lib/libchromatix_s5k4e5ya_default_video.so:/system/lib/libchromatix_s5k4e5ya_default_video.so \
+    device/lge/fx3/prebuilt/system/lib/libchromatix_s5k4e5ya_preview.so:/system/lib/libchromatix_s5k4e5ya_preview.so \
+    device/lge/fx3/prebuilt/system/lib/libchromatix_s5k4e5ya_zsl.so:/system/lib/libchromatix_s5k4e5ya_zsl.so \
+    device/lge/fx3/prebuilt/system/lib/libconfigdb.so:/system/lib/libconfigdb.so \
+    device/lge/fx3/prebuilt/system/lib/libdiag.so:/system/lib/libdiag.so \
+    device/lge/fx3/prebuilt/system/lib/libdl.so:/system/lib/libdl.so \
+    device/lge/fx3/prebuilt/system/lib/libdrmdiag.so:/system/lib/libdrmdiag.so \
+    device/lge/fx3/prebuilt/system/lib/libdrmfs.so:/system/lib/libdrmfs.so \
+    device/lge/fx3/prebuilt/system/lib/libdrmtime.so:/system/lib/libdrmtime.so \
+    device/lge/fx3/prebuilt/system/lib/libdsi_netctrl.so:/system/lib/libdsi_netctrl.so \
+    device/lge/fx3/prebuilt/system/lib/libdsprofile.so:/system/lib/libdsprofile.so \
+    device/lge/fx3/prebuilt/system/lib/libdss.so:/system/lib/libdss.so \
+    device/lge/fx3/prebuilt/system/lib/libdsucsd.so:/system/lib/libdsucsd.so \
+    device/lge/fx3/prebuilt/system/lib/libdsutils.so:/system/lib/libdsutils.so \
+    device/lge/fx3/prebuilt/system/lib/libgemini.so:/system/lib/libgemini.so \
+    device/lge/fx3/prebuilt/system/lib/libgps.utils.so:/system/lib/libgps.utils.so \
+    device/lge/fx3/prebuilt/system/lib/libgsl.so:/system/lib/libgsl.so \
+    device/lge/fx3/prebuilt/system/lib/libidl.so:/system/lib/libidl.so \
+    device/lge/fx3/prebuilt/system/lib/libimage-jpeg-dec-omx-comp.so:/system/lib/libimage-jpeg-dec-omx-comp.so \
+    device/lge/fx3/prebuilt/system/lib/libimage-jpeg-enc-omx-comp.so:/system/lib/libimage-jpeg-enc-omx-comp.so \
+    device/lge/fx3/prebuilt/system/lib/libimage-omx-common.so:/system/lib/libimage-omx-common.so \
+    device/lge/fx3/prebuilt/system/lib/liblgftmitem.so:/system/lib/liblgftmitem.so \
+    device/lge/fx3/prebuilt/system/lib/libllvm-a3xx.so:/system/lib/libllvm-a3xx.so \
+    device/lge/fx3/prebuilt/system/lib/libloc_adapter.so:/system/lib/libloc_adapter.so \
+    device/lge/fx3/prebuilt/system/lib/libloc_api_v02.so:/system/lib/libloc_api_v02.so \
+    device/lge/fx3/prebuilt/system/lib/libloc_eng.so:/system/lib/libloc_eng.so \
+    device/lge/fx3/prebuilt/system/lib/libloc_ext.so:/system/lib/libloc_ext.so \
+    device/lge/fx3/prebuilt/system/lib/libmm-color-convertor.so:/system/lib/libmm-color-convertor.so \
+    device/lge/fx3/prebuilt/system/lib/libmmcamera_faceproc.so:/system/lib/libmmcamera_faceproc.so \
+    device/lge/fx3/prebuilt/system/lib/libmmcamera_frameproc.so:/system/lib/libmmcamera_frameproc.so \
+    device/lge/fx3/prebuilt/system/lib/libmmcamera_statsproc31.so:/system/lib/libmmcamera_statsproc31.so \
+    device/lge/fx3/prebuilt/system/lib/libmmipl.so:/system/lib/libmmipl.so \
+    device/lge/fx3/prebuilt/system/lib/libmmjpeg.so:/system/lib/libmmjpeg.so \
+    device/lge/fx3/prebuilt/system/lib/libmmjps.so:/system/lib/libmmjps.so \
+    device/lge/fx3/prebuilt/system/lib/libmmmpo.so:/system/lib/libmmmpo.so \
+    device/lge/fx3/prebuilt/system/lib/libmmmpod.so:/system/lib/libmmmpod.so \
+    device/lge/fx3/prebuilt/system/lib/libmmosal.so:/system/lib/libmmosal.so \
+    device/lge/fx3/prebuilt/system/lib/libmmparser.so:/system/lib/libmmparser.so \
+    device/lge/fx3/prebuilt/system/lib/libmmstillomx.so:/system/lib/libmmstillomx.so \
+    device/lge/fx3/prebuilt/system/lib/libnetmgr.so:/system/lib/libnetmgr.so \
+    device/lge/fx3/prebuilt/system/lib/liboemcamera.so:/system/lib/liboemcamera.so \
+    device/lge/fx3/prebuilt/system/lib/libqc-opt.so:/system/lib/libqc-opt.so \
+    device/lge/fx3/prebuilt/system/lib/libqdi.so:/system/lib/libqdi.so \
+    device/lge/fx3/prebuilt/system/lib/libqdp.so:/system/lib/libqdp.so \
+    device/lge/fx3/prebuilt/system/lib/libqmi.so:/system/lib/libqmi.so \
+    device/lge/fx3/prebuilt/system/lib/libqmi_cci.so:/system/lib/libqmi_cci.so \
+    device/lge/fx3/prebuilt/system/lib/libqmi_common_so.so:/system/lib/libqmi_common_so.so \
+    device/lge/fx3/prebuilt/system/lib/libqmi_csi.so:/system/lib/libqmi_csi.so \
+    device/lge/fx3/prebuilt/system/lib/libqmi_encdec.so:/system/lib/libqmi_encdec.so \
+    device/lge/fx3/prebuilt/system/lib/libqmiservices.so:/system/lib/libqmiservices.so \
+    device/lge/fx3/prebuilt/system/lib/libreference-ril.so:/system/lib/libreference-ril.so \
+    device/lge/fx3/prebuilt/system/lib/libril-qc-qmi-1.so:/system/lib/libril-qc-qmi-1.so \
+    device/lge/fx3/prebuilt/system/lib/libril-qcril-hook-oem.so:/system/lib/libril-qcril-hook-oem.so \
+    device/lge/fx3/prebuilt/system/lib/libril.so:/system/lib/libril.so \
+    device/lge/fx3/prebuilt/system/lib/libsc-a2xx.so:/system/lib/libsc-a2xx.so \
+    device/lge/fx3/prebuilt/system/lib/libsc-a3xx.so:/system/lib/libsc-a3xx.so \
+    device/lge/fx3/prebuilt/system/lib/libsensor1.so:/system/lib/libsensor1.so \
+    device/lge/fx3/prebuilt/system/lib/libsensor_reg.so:/system/lib/libsensor_reg.so \
+    device/lge/fx3/prebuilt/system/lib/libv8.so:/system/lib/libv8.so \
+    device/lge/fx3/prebuilt/system/lib/libxml.so:/system/lib/libxml.so \
+    device/lge/fx3/prebuilt/system/lib/libxml2.so:/system/lib/libxml2.so
+    
+# usr/idc
+PRODUCT_COPY_FILES += \
+    device/lge/fx3/prebuilt/system/usr/idc/melfas-ts.idc:/system/usr/idc/melfas-ts.idc \
+    device/lge/fx3/prebuilt/system/usr/idc/qwerty.idc:/system/usr/idc/qwerty.idc \
+    device/lge/fx3/prebuilt/system/usr/idc/qwerty2.idc:/system/usr/idc/qwerty2.idc
     
 $(call inherit-product, build/target/product/full.mk)
 

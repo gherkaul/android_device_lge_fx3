@@ -202,7 +202,7 @@ PRODUCT_COPY_FILES += \
     device/lge/fx3/prebuilt/system/etc/OperatorPolicy.xml:/system/etc/OperatorPolicy.xml \
     device/lge/fx3/prebuilt/system/etc/UserPolicy.xml:/system/etc/UserPolicy.xml \
     device/lge/fx3/prebuilt/system/etc/apns-conf.xml:/system/etc/apns-conf.xml \
-    device/lge/fx3/prebuilt/system/init.goldfish.sh/AAA:/system/etc/init.goldfish.sh \
+    device/lge/fx3/prebuilt/system/etc/init.goldfish.sh:/system/etc/init.goldfish.sh \
     device/lge/fx3/prebuilt/system/etc/init.qcom.audio.sh:/system/etc/init.qcom.audio.sh \
     device/lge/fx3/prebuilt/system/etc/init.qcom.bt.sh:/system/etc/init.qcom.bt.sh \
     device/lge/fx3/prebuilt/system/etc/init.qcom.coex.sh:/system/etc/init.qcom.coex.sh \

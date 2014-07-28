@@ -129,7 +129,7 @@ PRODUCT_COPY_FILES += \
     device/lge/fx3/prebuilt/system/bin/mm-jpeg-dec-test:/system/bin/mm-jpeg-dec-test \
     device/lge/fx3/prebuilt/system/bin/mm-jpeg-dec-test-client:/system/bin/mm-jpeg-dec-test-client \
     device/lge/fx3/prebuilt/system/bin/mm-jpeg-enc-test:/system/bin/mm-jpeg-enc-test \
-    device/lge/fx3/prebuilt/system/binmm-jpeg-enc-test-client:/system/bin/mm-jpeg-enc-test-client \
+    device/lge/fx3/prebuilt/system/bin/mm-jpeg-enc-test-client:/system/bin/mm-jpeg-enc-test-client \
     device/lge/fx3/prebuilt/system/bin/mm-jps-enc-test:/system/bin/mm-jps-enc-test \
     device/lge/fx3/prebuilt/system/bin/mm-mpo-dec-test:/system/bin/mm-mpo-dec-test \
     device/lge/fx3/prebuilt/system/bin/mm-mpo-enc-test:/system/bin/mm-mpo-enc-test \

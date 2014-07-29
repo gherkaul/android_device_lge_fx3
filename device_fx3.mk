@@ -113,7 +113,6 @@ PRODUCT_COPY_FILES += \
     
 # bin
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/device/lge/fx3/prebuilt/system/bin/cnd:/system/bin/cnd \
     $(LOCAL_PATH)/device/lge/fx3/prebuilt/system/bin/ds_fmc_appd:/system/bin/ds_fmc_appd \
     $(LOCAL_PATH)/device/lge/fx3/prebuilt/system/bin/hostapd:/system/bin/hostapd \
     $(LOCAL_PATH)/device/lge/fx3/prebuilt/system/bin/mm-adec-omxaac-test:/system/bin/mm-adec-omxaac-test \

@@ -80,7 +80,79 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/lgdms.fota_update.rc:/root/lgdms.fota_update.rc \
     $(LOCAL_PATH)/rootdir/etc/ueventd.fx3s.rc:/root/ueventd.fx3s.rc \
     $(LOCAL_PATH)/rootdir/etc/ueventd.qcom.rc:/root/ueventd.qcom.rc
+    
+# NFC
+# Commands to migrate prefs from com.android.nfc3 to com.android.nfc
+PRODUCT_COPY_FILES += $(call add-to-product-copy-files-if-exists,\
+packages/apps/Nfc/migrate_nfc.txt:system/etc/updatecmds/migrate_nfc.txt)
 
+# NFC EXTRAS add-on API
+PRODUCT_PACKAGES += \
+    com.android.nfc_extras
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml
+    
+PRODUCT_PACKAGES += \
+    nfc.msm8960 \
+    libnfc \
+    libnfc_jni \
+    Nfc \
+    Tag
+
+# OMX
+PRODUCT_PACKAGES += \
+    libdivxdrmdecrypt \
+    libmm-omxcore \
+    libOmxCore \
+    libOmxVdec \
+    libOmxVenc \
+    libOmxAacEnc \
+    libOmxAmrEnc \
+    libstagefrighthw
+
+# hostapd
+PRODUCT_PACKAGES += \
+    hostapd
+
+# USB
+PRODUCT_PACKAGES += \
+    com.android.future.usb.accessory
+
+# Live wallpapers
+PRODUCT_PACKAGES += \
+    LiveWallpapers \
+    LiveWallpapersPicker \
+    VisualizationWallpapers \
+    librs_jni
+
+# Filesystem management tools
+PRODUCT_PACKAGES += \
+    make_ext4fs \
+    setup_fs
+    
+# MSM8960 firmware
+PRODUCT_COPY_FILES += \
+    device/lge/fx3/prebuilt/system/etc/firmware/a225_pfp.fw:/system/etc/firmware/a225_pfp.fw \
+    device/lge/fx3/prebuilt/system/etc/firmware/a225_pm4.fw:/system/etc/firmware/a225_pm4.fw \
+    device/lge/fx3/prebuilt/system/etc/firmware/a225p5_pm4.fw:/system/etc/firmware/a225p5_pm4.fw \
+    device/lge/fx3/prebuilt/system/etc/firmware/a300_pfp.fw:/system/etc/firmware/a225_pfp.fw \
+    device/lge/fx3/prebuilt/system/etc/firmware/a300_pm4.fw:/system/etc/firmware/a225_pm4.fw \
+    device/lge/fx3/prebuilt/system/etc/firmware/cyttsp_8064_mtp.hex:/system/etc/firmware/cyttsp_8064_mtp.hex \
+    device/lge/fx3/prebuilt/system/etc/firmware/cyttsp_8960_cdp.hex:/system/etc/firmware/cyttsp_8960_cdp.hex \
+    device/lge/fx3/prebuilt/system/etc/firmware/fw_bcmdhd.bin:/system/etc/firmware/fw_bcmdhd.bin \
+    device/lge/fx3/prebuilt/system/etc/firmware/fw_bcmdhd_apsta.bin:/system/etc/firmware/fw_bcmdhd_apsta.bin \
+    device/lge/fx3/prebuilt/system/etc/firmware/fw_bcmdhd_mfg.bin:/system/etc/firmware/fw_bcmdhd_mfg.bin \
+    device/lge/fx3/prebuilt/system/etc/firmware/fw_bcmdhd_p2p.bin:/system/etc/firmware/fw_bcmdhd_p2p.bin \
+    device/lge/fx3/prebuilt/system/etc/firmware/leia_pfp_470.fw:/system/etc/firmware/leia_pfp_470.fw \
+    device/lge/fx3/prebuilt/system/etc/firmware/leia_pm4_470.fw:/system/etc/firmware/leia_pm4_470.fw \
+    device/lge/fx3/prebuilt/system/etc/firmware/vidc_1080p.fw:/system/etc/firmware/vidc.b00
+    device/lge/fx3/prebuilt/system/etc/firmware/vidc_1080p.fw:/system/etc/firmware/vidc.b01
+    device/lge/fx3/prebuilt/system/etc/firmware/vidc_1080p.fw:/system/etc/firmware/vidc.b02
+    device/lge/fx3/prebuilt/system/etc/firmware/vidc_1080p.fw:/system/etc/firmware/vidc.b03
+    device/lge/fx3/prebuilt/system/etc/firmware/vidc_1080p.fw:/system/etc/firmware/vidc.mdt
+    device/lge/fx3/prebuilt/system/etc/firmware/vidc_1080p.fw:/system/etc/firmware/vidc_1080p.fw
+    device/lge/fx3/prebuilt/system/etc/firmware/vidc_1080p.fw:/system/etc/firmware/vidcfw.elf
+    
 # Qualcomm scripts
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/init.qcom.bt.sh:/system/etc/init.qcom.bt.sh \

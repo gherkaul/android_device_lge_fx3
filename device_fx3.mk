@@ -79,7 +79,7 @@ PRODUCT_COPY_FILES += \
     
 # NFCEE access control
 PRODUCT_COPY_FILES += \
-    device/lge/fx3/prebuilt/etc/nfcee_access.xml:system/etc/nfcee_access.xml
+    device/lge/fx3/prebuilt/system/etc/nfcee_access.xml:system/etc/nfcee_access.xml
     
 PRODUCT_PACKAGES += \
     nfc.msm8960 \

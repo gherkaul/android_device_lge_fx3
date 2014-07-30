@@ -77,6 +77,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml
     
+# NFCEE access control
+PRODUCT_COPY_FILES += \
+    device/lge/fx3/prebuilt/etc/nfcee_access.xml:system/etc/nfcee_access.xml
+    
 PRODUCT_PACKAGES += \
     nfc.msm8960 \
     libnfc \

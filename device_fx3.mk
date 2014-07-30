@@ -126,13 +126,13 @@ PRODUCT_COPY_FILES += \
     device/lge/fx3/prebuilt/system/etc/firmware/fw_bcmdhd_p2p.bin:/system/etc/firmware/fw_bcmdhd_p2p.bin \
     device/lge/fx3/prebuilt/system/etc/firmware/leia_pfp_470.fw:/system/etc/firmware/leia_pfp_470.fw \
     device/lge/fx3/prebuilt/system/etc/firmware/leia_pm4_470.fw:/system/etc/firmware/leia_pm4_470.fw \
-    device/lge/fx3/prebuilt/system/etc/firmware/vidc_1080p.fw:/system/etc/firmware/vidc.b00
-    device/lge/fx3/prebuilt/system/etc/firmware/vidc_1080p.fw:/system/etc/firmware/vidc.b01
-    device/lge/fx3/prebuilt/system/etc/firmware/vidc_1080p.fw:/system/etc/firmware/vidc.b02
-    device/lge/fx3/prebuilt/system/etc/firmware/vidc_1080p.fw:/system/etc/firmware/vidc.b03
-    device/lge/fx3/prebuilt/system/etc/firmware/vidc_1080p.fw:/system/etc/firmware/vidc.mdt
+    device/lge/fx3/prebuilt/system/etc/firmware/vidc.b00:/system/etc/firmware/vidc.b00
+    device/lge/fx3/prebuilt/system/etc/firmware/vidc.b0:/system/etc/firmware/vidc.b01
+    device/lge/fx3/prebuilt/system/etc/firmware/vidc.b02:/system/etc/firmware/vidc.b02
+    device/lge/fx3/prebuilt/system/etc/firmware/vidc.b03:/system/etc/firmware/vidc.b03
+    device/lge/fx3/prebuilt/system/etc/firmware/vidc.mdt:/system/etc/firmware/vidc.mdt
     device/lge/fx3/prebuilt/system/etc/firmware/vidc_1080p.fw:/system/etc/firmware/vidc_1080p.fw
-    device/lge/fx3/prebuilt/system/etc/firmware/vidc_1080p.fw:/system/etc/firmware/vidcfw.elf
+    device/lge/fx3/prebuilt/system/etc/firmware/vidcfw.elf:/system/etc/firmware/vidcfw.elf
     
 # Qualcomm scripts
 PRODUCT_COPY_FILES += \

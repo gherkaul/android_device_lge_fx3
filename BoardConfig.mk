@@ -4,6 +4,14 @@ USE_CAMERA_STUB := true
 TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
 TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
 
+# Include path
+TARGET_SPECIFIC_HEADER_PATH := device/lge/fx3/include
+
+# test
+TARGET_NO_BOOTLOADER := true
+#TARGET_NO_RECOVERY := true
+#TARGET_NO_KERNEL := true
+
 # inherit from the proprietary version
 -include vendor/lge/fx3/BoardConfigVendor.mk
 

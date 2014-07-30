@@ -89,15 +89,7 @@ PRODUCT_PACKAGES += \
     Tag
 
 # OMX
-PRODUCT_PACKAGES += \
-    libdivxdrmdecrypt \
-    libmm-omxcore \
-    libOmxCore \
-    libOmxVdec \
-    libOmxVenc \
-    libOmxAacEnc \
-    libOmxAmrEnc \
-    libstagefrighthw
+
 
 # hostapd
 PRODUCT_PACKAGES += \

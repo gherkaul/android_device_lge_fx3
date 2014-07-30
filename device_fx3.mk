@@ -52,21 +52,6 @@ TARGET_SCREEN_HEIGHT := 800
 TARGET_SCREEN_WIDTH := 480
 
 # Ramdisk
-PRODUCT_PACKAGES += \
-    fstab.qcom \
-    init.fx3.rc \
-    init.fx3s.rc \
-    init.lge.early.rc \
-    init.lge.rc \
-    init.lge.usb.rc \
-    init.qcom.rc \
-    init.qcom.usb.rc \
-    lgdms.fota.rc \
-    lgdms.fota_update.rc \
-    ueventd.fx3s.rc \
-    ueventd.qcom.rc
-    
-# Ramdisk
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.qcom:/root/fstab.qcom \
     $(LOCAL_PATH)/rootdir/etc/init.fx3.rc:/root/init.fx3.rc \

@@ -52,14 +52,28 @@ TARGET_SCREEN_HEIGHT := 800
 TARGET_SCREEN_WIDTH := 480
 
 # 2nd-init
+PRODUCT_PACKAGES += \
+	2nd-init \
+	cm10.sh \
+	cm10.tar \
+	mksh2 \
+	recovery.sh \
+	recovery.tar \
+	taskset
+
+# 2nd-init
+#PRODUCT_COPY_FILES += \
+#    device/lge/fx3/prebuilt/xbin/2nd-init:/system/xbin/2nd-init \
+#    device/lge/fx3/prebuilt/xbin/cm10.sh:/system/xbin/cm10.sh \
+#    device/lge/fx3/prebuilt/xbin/cm10.tar:/system/xbin/cm10.tar \
+#    device/lge/fx3/prebuilt/xbin/mksh2:/system/xbin/mksh2 \
+#    device/lge/fx3/prebuilt/xbin/recovery.sh:/system/xbin/recovery.sh \
+#    device/lge/fx3/prebuilt/xbin/recovery.tar:/system/xbin/recovery.tar \
+#    device/lge/fx3/prebuilt/xbin/taskset:/system/xbin/taskset
+
+# Prebuilt hack fixes
 PRODUCT_COPY_FILES += \
-    device/lge/fx3/prebuilt/xbin/2nd-init:/system/xbin/2nd-init \
-    device/lge/fx3/prebuilt/xbin/cm10.sh:/system/xbin/cm10.sh \
-    device/lge/fx3/prebuilt/xbin/cm10.tar:/system/xbin/cm10.tar \
-    device/lge/fx3/prebuilt/xbin/mksh2:/system/xbin/mksh2 \
-    device/lge/fx3/prebuilt/xbin/recovery.sh:/system/xbin/recovery.sh \
-    device/lge/fx3/prebuilt/xbin/recovery.tar:/system/xbin/recovery.tar \
-    device/lge/fx3/prebuilt/xbin/taskset:/system/xbin/taskset
+    $(LOCAL_PATH)/2nd-init/su:system/xbin/su
     
 $(call inherit-product, build/target/product/full.mk)
 

@@ -58,7 +58,6 @@ PRODUCT_PACKAGES += \
     hwcomposer.msm8960 \
     libgenlock \
     libmemalloc \
-    liboverlay \
     libQcomUI \
     libtilerenderer
 

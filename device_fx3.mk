@@ -51,6 +51,17 @@ PRODUCT_COPY_FILES += \
 TARGET_SCREEN_HEIGHT := 800
 TARGET_SCREEN_WIDTH := 480
 
+# Graphics
+PRODUCT_PACKAGES += \
+    copybit.msm8960 \
+    gralloc.msm8960 \
+    hwcomposer.msm8960 \
+    libgenlock \
+    libmemalloc \
+    liboverlay \
+    libQcomUI \
+    libtilerenderer
+
 # 2nd-init
 PRODUCT_PACKAGES += \
 	2nd-init \

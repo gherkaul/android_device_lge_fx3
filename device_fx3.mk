@@ -137,7 +137,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/lib/libmmparser.so:system/lib/libmmparser.so \
     $(LOCAL_PATH)/prebuilt/lib/libmmstillomx.so:system/lib/libmmstillomx.so \
     $(LOCAL_PATH)/prebuilt/lib/liboemcamera.so:system/lib/liboemcamera.so \
-    $(LOCAL_PATH)/prebuilt/lib/libOlaFaceDetector.so:system/lib/libOlaFaceDetector.so \
     $(LOCAL_PATH)/prebuilt/lib/libOlaLGECameraJNI_3b.so:system/lib/libOlaLGECameraJNI_3b.so \
     $(LOCAL_PATH)/prebuilt/lib/libOmxAacDec.so:system/lib/libOmxAacDec.so \
     $(LOCAL_PATH)/prebuilt/lib/libOmxWmaDec.so:system/lib/libOmxWmaDec.so \

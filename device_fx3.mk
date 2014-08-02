@@ -64,9 +64,20 @@ PRODUCT_PACKAGES += \
 #    device/lge/fx3/prebuilt/xbin/recovery.tar:/system/xbin/recovery.tar \
 #    device/lge/fx3/prebuilt/xbin/taskset:/system/xbin/taskset
 
+# Prebuilt libraries that are needed for DRM playback
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
+    $(LOCAL_PATH)/prebuilt/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
+    $(LOCAL_PATH)/prebuilt/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
+    $(LOCAL_PATH)/prebuilt/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so
+
 # Prebuilt hack fixes
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/2nd-init/su:system/xbin/su
+    
+# Lights
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/lib/hw/lights.msm8960.so:/system/lib/hw/lights.msm8960.so \
     
 $(call inherit-product, build/target/product/full.mk)
 

@@ -14,7 +14,11 @@
 # limitations under the License.
 #
 
-ifeq ($(TARGET_DEVICE),m4)
+# HACK for prebuilt libril and libcamera
+$(shell mkdir -p $(OUT)/obj/KERNEL_OBJ/usr)
+$(shell touch $(OUT)/obj/KERNEL_OBJ/usr/export_includes)
+
+ifeq ($(TARGET_DEVICE),fx3)
 
 LOCAL_PATH := $(call my-dir)
 include $(call first-makefiles-under,$(LOCAL_PATH))

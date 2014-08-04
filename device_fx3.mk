@@ -64,6 +64,26 @@ PRODUCT_PACKAGES += \
 #    device/lge/fx3/prebuilt/xbin/recovery.tar:/system/xbin/recovery.tar \
 #    device/lge/fx3/prebuilt/xbin/taskset:/system/xbin/taskset
 
+# RIL
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/bin/netmgrd:system/bin/netmgrd \
+    $(LOCAL_PATH)/prebuilt/bin/qmiproxy:system/bin/qmiproxy \
+    $(LOCAL_PATH)/prebuilt/bin/qmuxd:system/bin/qmuxd \
+    $(LOCAL_PATH)/prebuilt/bin/rild:system/bin/rild \
+    $(LOCAL_PATH)/prebuilt/lib/libdiag.so:system/lib/libdiag.so \
+    $(LOCAL_PATH)/prebuilt/lib/libdl.so:system/lib/libdl.so \
+    $(LOCAL_PATH)/prebuilt/lib/libdsi_netctrl.so:system/lib/libdsi_netctrl.so \
+    $(LOCAL_PATH)/prebuilt/lib/libdsutils.so:system/lib/libdsutils.so \
+    $(LOCAL_PATH)/prebuilt/lib/libnetmgr.so:system/lib/libnetmgr.so \
+    $(LOCAL_PATH)/prebuilt/lib/libqdi.so:system/lib/libqdi.so \
+    $(LOCAL_PATH)/prebuilt/lib/libqdp.so:system/lib/libqdp.so \
+    $(LOCAL_PATH)/prebuilt/lib/libqmi.so:system/lib/libqmi.so \
+    $(LOCAL_PATH)/prebuilt/lib/libqmiservices.so:system/lib/libqmiservices.so \
+    $(LOCAL_PATH)/prebuilt/lib/libreference-ril.so:system/lib/libreference-ril.so \
+    $(LOCAL_PATH)/prebuilt/lib/libril.so:system/lib/libril.so \
+    $(LOCAL_PATH)/prebuilt/lib/libril-qc-qmi-1.so:system/lib/libril-qc-qmi-1.so \
+    $(LOCAL_PATH)/prebuilt/lib/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so
+
 # GPS
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/etc/gps.conf:system/etc/gps.conf \

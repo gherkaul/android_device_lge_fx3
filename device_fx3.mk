@@ -64,6 +64,21 @@ PRODUCT_PACKAGES += \
 #    device/lge/fx3/prebuilt/xbin/recovery.tar:/system/xbin/recovery.tar \
 #    device/lge/fx3/prebuilt/xbin/taskset:/system/xbin/taskset
 
+# Audio /Sound / Media
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/etc/audio_policy.conf:system/etc/audio_policy.conf \
+    $(LOCAL_PATH)/prebuilt/etc/firmware/wcd9310/wcd9310_anc.bin:/system/etc/firmware/wcd9310/wcd9310_anc.bin \
+    $(LOCAL_PATH)/prebuilt/etc/firmware/wcd9310/wcd9310_mbhc.bin:/system/etc/firmware/wcd9310/wcd9310_mbhc.bin \
+    $(LOCAL_PATH)/prebuilt/etc/media_codecs.xml:system/etc/media_codecs.xml \
+    $(LOCAL_PATH)/prebuilt/etc/media_profiles.xml:system/etc/media_profiles.xml \
+    $(LOCAL_PATH)/prebuilt/etc/snd_soc_msm/snd_soc_msm:system/etc/snd_soc_msm/snd_soc_msm \
+    $(LOCAL_PATH)/prebuilt/etc/snd_soc_msm/snd_soc_msm_2x:system/etc/snd_soc_msm/snd_soc_msm_2x \
+    $(LOCAL_PATH)/prebuilt/etc/telephony.xml:system/etc/telephony.xml \
+    $(LOCAL_PATH)/prebuilt/lib/libacdbloader.so:system/lib/libacdbloader.so \
+    $(LOCAL_PATH)/prebuilt/lib/libacdbloader.so:obj/lib/libacdbloader.so \
+    $(LOCAL_PATH)/prebuilt/lib/libaudcal.so:system/lib/libaudcal.so \
+    $(LOCAL_PATH)/prebuilt/lib/libaudioalsa.so:system/lib/libaudioalsa.so
+
 # Prebuilt libraries that are needed
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/bin/bridgemgrd:system/bin/bridgemgrd \

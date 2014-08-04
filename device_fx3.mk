@@ -64,6 +64,16 @@ PRODUCT_PACKAGES += \
 #    device/lge/fx3/prebuilt/xbin/recovery.tar:/system/xbin/recovery.tar \
 #    device/lge/fx3/prebuilt/xbin/taskset:/system/xbin/taskset
 
+# GPS
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/etc/gps.conf:system/etc/gps.conf \
+    $(LOCAL_PATH)/prebuilt/lib/libgps.utils.so:system/lib/libgps.utils.so \
+    $(LOCAL_PATH)/prebuilt/lib/libloc_adapter.so:system/lib/libloc_adapter.so \
+    $(LOCAL_PATH)/prebuilt/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
+    $(LOCAL_PATH)/prebuilt/lib/libloc_eng.so:system/lib/libloc_eng.so \
+    $(LOCAL_PATH)/prebuilt/lib/libloc_ext.so:system/lib/libloc_ext.so \
+    $(LOCAL_PATH)/prebuilt/lib/hw/gps.default.so:system/lib/hw/gps.default.so
+
 # Graphics
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/etc/firmware/a225_pfp.fw:system/etc/firmware/a225_pfp.fw \

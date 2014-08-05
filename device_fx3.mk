@@ -22,6 +22,34 @@ $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
+# USB
+PRODUCT_PACKAGES += \
+    com.android.future.usb.accessory
+
+# Live wallpapers
+PRODUCT_PACKAGES += \
+    LiveWallpapers \
+    LiveWallpapersPicker \
+    VisualizationWallpapers \
+    librs_jni
+
+# Filesystem management tools
+PRODUCT_PACKAGES += \
+    make_ext4fs \
+    setup_fs
+
+# LTE on CDMA
+PRODUCT_PACKAGES += \
+    Stk
+
+# Camera
+PRODUCT_PACKAGES += \
+    libcameraservice
+
+# Torch
+PRODUCT_PACKAGES += \
+    Torch
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \

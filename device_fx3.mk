@@ -64,6 +64,19 @@ PRODUCT_PACKAGES += \
 #    device/lge/fx3/prebuilt/xbin/recovery.tar:/system/xbin/recovery.tar \
 #    device/lge/fx3/prebuilt/xbin/taskset:/system/xbin/taskset
 
+# vold config
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/etc/vold.fstab:system/etc/vold.fstab
+
+# apn config
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/etc/apns-conf.xml:/system/etc/apns-conf.xml
+
+# Prebuilt libraries that are needed to build open-source libraries
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/lib/libacdbloader.so:obj/lib/libacdbloader.so \
+    $(LOCAL_PATH)/prebuilt/lib/libv8.so:obj/lib/libv8.so
+
 # Sensors
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/bin/atd:system/bin/atd \

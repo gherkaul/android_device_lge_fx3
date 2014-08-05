@@ -64,6 +64,21 @@ PRODUCT_PACKAGES += \
 #    device/lge/fx3/prebuilt/xbin/recovery.tar:/system/xbin/recovery.tar \
 #    device/lge/fx3/prebuilt/xbin/taskset:/system/xbin/taskset
 
+# Sensors
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/bin/atd:system/bin/atd \
+    $(LOCAL_PATH)/prebuilt/bin/ATFWD-daemon:system/bin/ATFWD-daemon \
+    $(LOCAL_PATH)/prebuilt/bin/sensors.qcom:system/bin/sensors.qcom \
+    $(LOCAL_PATH)/prebuilt/bin/thermald:system/bin/thermald \
+    $(LOCAL_PATH)/prebuilt/etc/thermald-8064.conf:system/etc/thermald-8064.conf \
+    $(LOCAL_PATH)/prebuilt/etc/thermald-8930.conf:system/etc/thermald-8930.conf \
+    $(LOCAL_PATH)/prebuilt/etc/thermald-8930-empty.conf:system/etc/thermald-8930-empty.conf \
+    $(LOCAL_PATH)/prebuilt/etc/thermald-8960.conf:system/etc/thermald-8960.conf \
+    $(LOCAL_PATH)/prebuilt/etc/thermald-8960ab.conf:system/etc/thermald-8960ab.conf \
+    $(LOCAL_PATH)/prebuilt/lib/hw/sensors.default.so:system/lib/hw/sensors.default.so \
+    $(LOCAL_PATH)/prebuilt/lib/libsensor_reg.so:system/lib/libsensor_reg.so \
+    $(LOCAL_PATH)/prebuilt/lib/libsensor1.so:system/lib/libsensor1.so
+
 # RIL
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/bin/netmgrd:system/bin/netmgrd \

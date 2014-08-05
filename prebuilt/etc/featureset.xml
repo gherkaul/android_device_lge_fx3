@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<profiles>
+	
+	<FeatureSet>
+      	<item name="support_send_burst_dtmf">true</item> 
+      	<item name="support_cdma_forward_burst_dtmf">true</item> 
+      	<item name="support_sms_segmentation">true</item>
+		<item name="support_roaming_guard">true</item> 
+		<item name="support_sprint_n11">true</item> 
+		<item name="sprint_location_spec">true</item> 
+		<item name="sprint_hdr_roaming">true</item> 
+		<item name="sprint_ehrpd_forced">true</item> 
+		<item name="cdma_sms_callback">true</item> 
+		<item name="cdma_priority_indicator">true</item>
+		<!-- [SPRINT] Sprint_Segment_SMS-->
+		<item name="sprint_reassembly_sms">true</item> 
+		<item name="sprint_segment_sms">true</item> 
+		<!-- [SPRINT] Sprint_Segment_SMS-->
+		<!-- [SMS]CDG2 Test patch -->
+		<item name="cdma_sms_cdg2">false</item> 
+		<item name="support_cdg2_test">false</item>
+		<!-- [SMS]CDG2 Test patch -->
+		<item name="cdma_kr_testbed_mms_receive">true</item>
+		<item name="email_over_sms">true</item>
+		<item name="support_sprint_sms_roaming_guard">true</item>
+		<item name="support_sprint_lock_and_wipe">true</item>
+		<item name="KREncodingScheme">true</item>
+		<item name="show_Mdn_For_VMS">true</item>		
+		<item name="change_mdn_sync_vms">true</item>	
+		<item name="support_sprint_vvm">true</item>	
+		</FeatureSet>
+</profiles>	

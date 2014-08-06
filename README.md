@@ -51,4 +51,6 @@ $ rm -rf hardware/qcom/display
 $ mkdir hardware/qcom/display
 ```
 
-If you repo sync, you may need to fulfill the requirements again as they maybe reset to defaults. The media-legacy and the display-legacy are needed. Unfortuanitly they conflict with the default media and display folders.
+If you repo sync, you may need to fulfill the requirements again as they maybe reset to defaults. The media-legacy and the display-legacy are needed. Unfortunately they conflict with the default media and display folders. Also msm8960 is not included in the cm repository but is a requirement for this phone. That's why it was added as a requirement.
+
+Currently the only thing that works is the recovery. The rom does not boot.

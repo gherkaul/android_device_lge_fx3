@@ -42,11 +42,11 @@ $ git clone https://github.com/hroark13/hardware_qcom_display-legacy.git -b mast
 $ rm -rf hardware/qcom/msm8960
 $ git clone https://android.googlesource.com/platform/hardware/qcom/msm8960 hardware/qcom/msm8960
 
-# make sure hardware/qcom/media is empty
+# make sure hardware/qcom/media is empty but folder exists
 $ rm -rf hardware/qcom/media
 $ mkdir hardware/qcom/media
 
-# make sure hardware/qcom/display is empty
+# make sure hardware/qcom/display is empty but folder exists
 $ rm -rf hardware/qcom/display
 $ mkdir hardware/qcom/display
 ```

@@ -66,7 +66,7 @@ USE_OPENGL_RENDERER := true
 TARGET_NO_HW_VSYNC := true
 TARGET_USES_C2D_COMPOSITION := true
 TARGET_USES_ION := true
-BOARD_EGL_CFG := device/lge/l0/prebuilt/lib/egl/egl.cfg
+BOARD_EGL_CFG := device/lge/fx3/prebuilt/lib/egl/egl.cfg
 
 # PMEM compatibility
 BOARD_NEEDS_MEMORYHEAPPMEM := true

@@ -50,3 +50,5 @@ $ mkdir hardware/qcom/media
 $ rm -rf hardware/qcom/display
 $ mkdir hardware/qcom/display
 ```
+
+If you repo sync, you may need to fulfill the requirements again as they maybe reset to defaults. The media-legacy and the display-legacy are needed. Unfortuanitly they conflict with the default media and display folders.

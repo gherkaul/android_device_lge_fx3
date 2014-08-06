@@ -3,18 +3,21 @@ USE_CAMERA_STUB := true
 # Flags
 TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
 TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
+COMMON_GLOBAL_CFLAGS += -DQCOM_HARDWARE -DLGE_MSM8960
 
 # Include path
 TARGET_SPECIFIC_HEADER_PATH := device/lge/fx3/include
 
 # test
 TARGET_NO_BOOTLOADER := true
+TARGET_BOARD_PLATFORM_GPU := qcom-adreno305
 #TARGET_NO_RECOVERY := true
 #TARGET_NO_KERNEL := true
 
 # inherit from the proprietary version
 -include vendor/lge/fx3/BoardConfigVendor.mk
 
+# Architecture
 TARGET_ARCH := arm
 TARGET_NO_BOOTLOADER := true
 TARGET_BOARD_PLATFORM := msm8960
@@ -38,6 +41,9 @@ LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 TARGET_KERNEL_CONFIG := fx3_spcs_defconfig
 TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.4.3
 
+TARGET_QCOM_DISPLAY_VARIANT := caf
+BOARD_EGL_NEEDS_LEGACY_FB := true
+
 # Linaro Optimization
 TARGET_USE_O3 := true
 TARGET_USE_GRAPHITE := true
@@ -51,15 +57,44 @@ TARGET_KRAIT_BIONIC_PLDTHRESH := 10
 TARGET_KRAIT_BIONIC_BBTHRESH := 64
 TARGET_KRAIT_BIONIC_PLDSIZE := 64
 
+# QCOM hardware
+BOARD_USES_QCOM_HARDWARE := true
 
+# Graphics
+COMMON_GLOBAL_CFLAGS += -DQCOM_NO_SECURE_PLAYBACK -DQCOM_ROTATOR_KERNEL_FORMATS
+USE_OPENGL_RENDERER := true
+TARGET_NO_HW_VSYNC := true
+TARGET_USES_C2D_COMPOSITION := true
+TARGET_USES_ION := true
+BOARD_EGL_CFG := device/lge/l0/prebuilt/lib/egl/egl.cfg
 
+# PMEM compatibility
+BOARD_NEEDS_MEMORYHEAPPMEM := true
 
+# ICS proprietary blob compatibility
+COMMON_GLOBAL_CFLAGS += -DICS_CAMERA_BLOB
 
+# Audio
+TARGET_QCOM_AUDIO_VARIANT := true
+BOARD_USES_ALSA_AUDIO := true
+BOARD_USES_SEPERATED_AUDIO_INPUT := true
+TARGET_USES_ION_AUDIO := true
 
+# Lights
+TARGET_PROVIDES_LIBLIGHTS := true
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
-TARGET_CUSTOM_BLUEDROID := ../../../device/lge/fx3/bluetooth/bluetooth.c
+BOARD_HAVE_BLUETOOTH_QCOM := true
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lge/l0/bluetooth
+
+# Webkit
+ENABLE_WEBGL := true
+TARGET_FORCE_CPU_UPLOAD := true
+
+# Preload bootanimation
+TARGET_BOOTANIMATION_PRELOAD := true
+
 # Filesystem
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_BOOTIMAGE_PARTITION_SIZE := 50331648

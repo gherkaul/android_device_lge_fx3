@@ -37,8 +37,11 @@ export PATH=$PATH:~/android/source/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/b
 **Requirements**
 ```
 $ cd ~/android/source
+
+#currently testing new media-legacy source. Stick with the second one for now.
 $ git clone https://github.com/JDevs/android_hardware_qcom_media_legacy.git -b master hardware/qcom/media-legacy
 $ git clone https://github.com/hroark13/hardware_qcom_media-legacy.git -b master hardware/qcom/media-legacy
+
 $ git clone https://github.com/hroark13/hardware_qcom_display-legacy.git -b master hardware/qcom/display-legacy
 $ rm -rf hardware/qcom/msm8960
 $ git clone https://android.googlesource.com/platform/hardware/qcom/msm8960 hardware/qcom/msm8960

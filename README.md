@@ -57,4 +57,4 @@ If you repo sync, you may need to fulfill the requirements again as they maybe r
 
 I personaly remove the contents of the hardware/qcom/media, and hardware/qcom/display and place them in a backup folder on the desktop or the home folder. I move them back into their correct folders before doing a $ repo sync. Afterwards I remove them again. If they are not removed, the compile will fail.
 
-Currently the only thing that works is the recovery. The rom does not boot.
+Currently the only thing that works is the recovery. The rom does not boot. It is getting to the boot animation though.

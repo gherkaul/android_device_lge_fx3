@@ -38,11 +38,9 @@ export PATH=$PATH:~/android/source/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/b
 ```
 $ cd ~/android/source
 
-#currently testing new media-legacy source. Stick with the second one for now.
-$ git clone https://github.com/JDevs/android_hardware_qcom_media_legacy.git -b master hardware/qcom/media-legacy
 $ git clone https://github.com/hroark13/hardware_qcom_media-legacy.git -b master hardware/qcom/media-legacy
-
 $ git clone https://github.com/hroark13/hardware_qcom_display-legacy.git -b master hardware/qcom/display-legacy
+
 $ rm -rf hardware/qcom/msm8960
 $ git clone https://android.googlesource.com/platform/hardware/qcom/msm8960 hardware/qcom/msm8960
 
@@ -56,5 +54,7 @@ $ mkdir hardware/qcom/display
 ```
 
 If you repo sync, you may need to fulfill the requirements again as they maybe reset to defaults. The media-legacy and the display-legacy are needed. Unfortunately they conflict with the default media and display folders. Also msm8960 is not included in the cm repository but is a requirement for this phone. That's why it was added as a requirement.
+
+I personaly remove the contents of the hardware/qcom/media, and hardware/qcom/display and place them in a backup folder on the desktop or the home folder. I move them back into their correct folders before doing a $ repo sync. Afterwards I remove them again. If they are not removed, the compile will fail.
 
 Currently the only thing that works is the recovery. The rom does not boot.

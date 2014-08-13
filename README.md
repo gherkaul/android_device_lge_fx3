@@ -16,9 +16,17 @@ $ . build/tools/device/makerecoveries.sh cm_fx3-eng
 ```
 **To compile rom:**
 ```
+# before first compile
+$ vendor/cm/get-prebuilts
+
+# then
 $ make clean
 $ . build/envsetup.sh
 $ brunch cm_fx3-eng
+
+# or
+$ make clean
+$ . build/envsetup.sh && brunch cm_fx3-eng
 ```
 
 

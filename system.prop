@@ -297,3 +297,6 @@ service.brcm.bt.aptx=0
 
 # support 3-way call
 service.brcm.bt.3way_support=true
+
+# adb support wile booting
+persist.sys.usb.config=accessory,adb

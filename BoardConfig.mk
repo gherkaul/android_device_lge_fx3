@@ -9,12 +9,14 @@ TARGET_SPECIFIC_HEADER_PATH := device/lge/fx3/include
 
 # test
 TARGET_NO_BOOTLOADER := true
+TARGET_BOARD_PLATFORM_GPU := qcom-adreno305
 #TARGET_NO_RECOVERY := true
 #TARGET_NO_KERNEL := true
 
 # inherit from the proprietary version
 -include vendor/lge/fx3/BoardConfigVendor.mk
 
+# Architecture
 TARGET_ARCH := arm
 TARGET_NO_BOOTLOADER := true
 TARGET_BOARD_PLATFORM := msm8960
@@ -37,6 +39,10 @@ LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 
 TARGET_KERNEL_CONFIG := fx3_spcs_defconfig
 TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.4.3
+
+#TARGET_QCOM_DISPLAY_VARIANT := caf
+#TARGET_QCOM_DISPLAY_VARIANT := legacy
+BOARD_EGL_NEEDS_LEGACY_FB := true
 
 # Linaro Optimization
 TARGET_USE_O3 := true

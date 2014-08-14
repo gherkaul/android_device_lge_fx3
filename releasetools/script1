@@ -14,6 +14,7 @@ ui_print("");
 ui_print("big thanks to Hroark13, Dm47021,");
 ui_print("PlayfulGod, & Bobz");
 ui_print("");
+ui_print("");
 ui_print("Unmounting /system");
 unmount("/system");
 ui_print("");

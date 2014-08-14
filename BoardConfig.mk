@@ -9,7 +9,7 @@ TARGET_SPECIFIC_HEADER_PATH := device/lge/fx3/include
 
 # test
 TARGET_NO_BOOTLOADER := true
-TARGET_BOARD_PLATFORM_GPU := qcom-adreno305
+TARGET_BOARD_PLATFORM_GPU := qcom-adreno200
 #TARGET_NO_RECOVERY := true
 #TARGET_NO_KERNEL := true
 

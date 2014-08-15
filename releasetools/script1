@@ -1,8 +1,8 @@
 show_progress(0.500000, 0);
 ui_print("");
- ui_print("+-+-+-+-+-+-+-+-+-+-+-+");
- ui_print("|C|y|a|n|o|g|e|n|M|O|D|");
- ui_print("+-+-+-+-+-+-+-+-+-+-+-+");
+ui_print("+-+-+-+-+-+-+-+-+-+-+-+");
+ui_print("|C|y|a|n|o|g|e|n|M|O|D|");
+ui_print("+-+-+-+-+-+-+-+-+-+-+-+");
 ui_print("by");
 ui_print("xclusive36");
 ui_print("");

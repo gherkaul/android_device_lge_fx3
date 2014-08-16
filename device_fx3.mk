@@ -354,9 +354,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 PRODUCT_NAME := full_fx3
 PRODUCT_DEVICE := fx3
 
-PRODUCT_PROPERTY_OVERRIDES := \
-    persist.sys.usb.config=accessory,adb \
-
 # call the proprietary setup
 $(call inherit-product-if-exists, vendor/lge/fx3/fx3-vendor.mk)
 

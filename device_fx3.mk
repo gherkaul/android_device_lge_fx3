@@ -126,24 +126,24 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/etc/init.qcom.wifi.sh:/system/etc/init.qcom.wifi.sh
 
 # 2nd-init
-PRODUCT_PACKAGES += \
-	2nd-init \
-	cm10.sh \
-	cm10.tar \
-	mksh2 \
-	recovery.sh \
-	recovery.tar \
-	taskset
+#PRODUCT_PACKAGES += \
+#	2nd-init \
+#	cm10.sh \
+#	cm10.tar \
+#	mksh2 \
+#	recovery.sh \
+#	recovery.tar \
+#	taskset
 
 # 2nd-init
-#PRODUCT_COPY_FILES += \
-#    device/lge/fx3/prebuilt/xbin/2nd-init:/system/xbin/2nd-init \
-#    device/lge/fx3/prebuilt/xbin/cm10.sh:/system/xbin/cm10.sh \
-#    device/lge/fx3/prebuilt/xbin/cm10.tar:/system/xbin/cm10.tar \
-#    device/lge/fx3/prebuilt/xbin/mksh2:/system/xbin/mksh2 \
-#    device/lge/fx3/prebuilt/xbin/recovery.sh:/system/xbin/recovery.sh \
-#    device/lge/fx3/prebuilt/xbin/recovery.tar:/system/xbin/recovery.tar \
-#    device/lge/fx3/prebuilt/xbin/taskset:/system/xbin/taskset
+PRODUCT_COPY_FILES += \
+    device/lge/fx3/prebuilt/xbin/2nd-init:/system/xbin/2nd-init \
+    device/lge/fx3/prebuilt/xbin/cm10.sh:/system/xbin/cm10.sh \
+    device/lge/fx3/prebuilt/xbin/cm10.tar:/system/xbin/cm10.tar \
+    device/lge/fx3/prebuilt/xbin/mksh2:/system/xbin/mksh2 \
+    device/lge/fx3/prebuilt/xbin/recovery.sh:/system/xbin/recovery.sh \
+    device/lge/fx3/prebuilt/xbin/recovery.tar:/system/xbin/recovery.tar \
+    device/lge/fx3/prebuilt/xbin/taskset:/system/xbin/taskset
 
 # vold config
 PRODUCT_COPY_FILES += \

@@ -168,6 +168,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/bin/ATFWD-daemon:system/bin/ATFWD-daemon \
     $(LOCAL_PATH)/prebuilt/bin/sensors.qcom:system/bin/sensors.qcom \
     $(LOCAL_PATH)/prebuilt/bin/thermald:system/bin/thermald \
+    $(LOCAL_PATH)/prebuilt/etc/thermald.conf:system/etc/thermald.conf \
     $(LOCAL_PATH)/prebuilt/etc/thermald-8064.conf:system/etc/thermald-8064.conf \
     $(LOCAL_PATH)/prebuilt/etc/thermald-8930.conf:system/etc/thermald-8930.conf \
     $(LOCAL_PATH)/prebuilt/etc/thermald-8930-empty.conf:system/etc/thermald-8930-empty.conf \
@@ -286,6 +287,52 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/bin/usbhub_init:system/bin/usbhub_init \
     $(LOCAL_PATH)/prebuilt/bin/v4l2-qcamera-app:system/bin/v4l2-qcamera-app \
     $(LOCAL_PATH)/prebuilt/lib/hw/camera.msm8960.so:system/lib/hw/camera.msm8960.so \
+    $(LOCAL_PATH)/prebuilt/lib/hw/aduio.primary.mpq8064.so:system/lib/hw/audio.primary.mpq8064.so \
+    $(LOCAL_PATH)/prebuilt/lib/hw/audio_policy.mpq8064.so:system/lib/hw/audio_policy.mpq8064.so \
+    $(LOCAL_PATH)/prebuilt/lib/hw/audio_policy.msm8960.so:system/lib/hw/audio_policy.msm8960.so \
+    $(LOCAL_PATH)/prebuilt/lib/hw/copybit.msm8960.so:system/lib/hw/copybit.msm8960.so \
+    $(LOCAL_PATH)/prebuilt/lib/hw/gestures.msm8960.so:system/lib/hw/gestures.msm8960.so \
+    $(LOCAL_PATH)/prebuilt/lib/hw/gralloc.msm8960.so:system/lib/hw/gralloc.msm8960.so \
+    $(LOCAL_PATH)/prebuilt/lib/hw/hwcomposer.msm8960.so:system/lib/hw/hwcomposer.msm8960.so \
+    $(LOCAL_PATH)/prebuilt/lib/hw/nfc.default.so:system/lib/hw/nfc.default.so \
+    $(LOCAL_PATH)/prebuilt/lib/libc2d2_a3xx.so:system/lib/libc2d2_a3xx.so \
+    $(LOCAL_PATH)/prebuilt/lib/libchromatix_hi543_default_video.so:system/lib/libchromatix_hi543_default_video.so \
+    $(LOCAL_PATH)/prebuilt/lib/libchromatix_hi543_preview.so:system/lib/libchromatix_hi543_preview.so \
+    $(LOCAL_PATH)/prebuilt/lib/libchromatix_hi543_zsl.so:system/lib/libchromatix_hi543_zsl.so \
+    $(LOCAL_PATH)/prebuilt/lib/libchromatix_mt9e013_default_video.so:system/lib/libchromatix_mt9e013_default_video.so \
+    $(LOCAL_PATH)/prebuilt/lib/libchromatix_mt9e013_preview.so:system/lib/libchromatix_mt9e013_preview.so \
+    $(LOCAL_PATH)/prebuilt/lib/libchromatix_mt9e013_video_hfr.so:system/lib/libchromatix_mt9e013_video_hfr.so \
+    $(LOCAL_PATH)/prebuilt/lib/libchromatix_ov2720_hfr.so:system/lib/libchromatix_ov2720_hfr.so \
+    $(LOCAL_PATH)/prebuilt/lib/libchromatix_ov2720_zsl.so:system/lib/libchromatix_ov2720_zsl.so \
+    $(LOCAL_PATH)/prebuilt/lib/libchromatix_ov5647_default_video.so:system/lib/libchromatix_ov5647_default_video.so \
+    $(LOCAL_PATH)/prebuilt/lib/libchromatix_ov5647_preview.so:system/lib/libchromatix_ov5647_preview.so \
+    $(LOCAL_PATH)/prebuilt/lib/libchromatix_ov8825_default_video.so:system/lib/libchromatix_ov8825_default_video.so \
+    $(LOCAL_PATH)/prebuilt/lib/libchromatix_ov8825_preview.so:system/lib/libchromatix_ov8825_preview.so \
+    $(LOCAL_PATH)/prebuilt/lib/libchromatix_ov9726_default_video.so:system/lib/libchromatix_ov9726_default_video.so \
+    $(LOCAL_PATH)/prebuilt/lib/libchromatix_ov9726_preview.so:system/lib/libchromatix_ov9726_preview.so \
+    $(LOCAL_PATH)/prebuilt/lib/libchromatix_s5k4e5ya_default_video.so:system/lib/libchromatix_s5k4e5ya_default_video.so \
+    $(LOCAL_PATH)/prebuilt/lib/libchromatix_s5k4e5ya_preview.so:system/lib/libchromatix_s5k4e5ya_preview.so \
+    $(LOCAL_PATH)/prebuilt/lib/libchromatix_s5k4e5ya_zsl.so:system/lib/libchromatix_s5k4e5ya_zsl.so \
+    $(LOCAL_PATH)/prebuilt/lib/libhwcexternal.so:system/lib/libhwcexternal.so \
+    $(LOCAL_PATH)/prebuilt/lib/libhwcservice.so:system/lib/libhwcservice.so \
+    $(LOCAL_PATH)/prebuilt/lib/libmemalloc.so:system/lib/libmemalloc.so \
+    $(LOCAL_PATH)/prebuilt/lib/libmmcamera_imx091.so:system/lib/libmmcamera_imx091.so \
+    $(LOCAL_PATH)/prebuilt/lib/libnexstreaming_h264_dl.so:system/lib/libnexstreaming_h264_dl.so \
+    $(LOCAL_PATH)/prebuilt/lib/libOmxAacEnc.so:system/lib/libOmxAacEnc.so \
+    $(LOCAL_PATH)/prebuilt/lib/libOmxAmrEnc.so:system/lib/libOmxAmrEnc.so \
+    $(LOCAL_PATH)/prebuilt/lib/libOmxCore.so:system/lib/libOmxCore.so \
+    $(LOCAL_PATH)/prebuilt/lib/libOmxEvrcDec.so:system/lib/libOmxEvrcDec.so \
+    $(LOCAL_PATH)/prebuilt/lib/libOmxEvrcEnc.so:system/lib/libOmxEvrcEnc.so \
+    $(LOCAL_PATH)/prebuilt/lib/libOmxMux.so:system/lib/libOmxMux.so \
+    $(LOCAL_PATH)/prebuilt/lib/libOmxQcelp13Dec.so:system/lib/libOmxQcelp13Dec.so \
+    $(LOCAL_PATH)/prebuilt/lib/libOmxQcelp13Enc.so:system/lib/libOmxQcelp13Enc.so \
+    $(LOCAL_PATH)/prebuilt/lib/libOmxVdec.so:system/lib/libOmxVdec.so \
+    $(LOCAL_PATH)/prebuilt/lib/libOmxVenc.so:system/lib/libOmxVenc.so \
+    $(LOCAL_PATH)/prebuilt/lib/liboverlay.so:system/lib/liboverlay.so \
+    $(LOCAL_PATH)/prebuilt/lib/libqdutils.so:system/lib/libqdutils.so \
+    $(LOCAL_PATH)/prebuilt/lib/libstagefrighthw.so:system/lib/listagefrighthw.so \
+    $(LOCAL_PATH)/prebuilt/lib/libstagefright_soft_ddpdec.so:system/lib/listagefrightsoft_ddpdec.so \
+    $(LOCAL_PATH)/prebuilt/lib/libstagefright_soft_dtsdec.so:system/lib/listagefright_soft_dtsdec.so \
     $(LOCAL_PATH)/prebuilt/lib/libacdbloader.so:system/lib/libacdbloader.so \
     $(LOCAL_PATH)/prebuilt/lib/libgenlock.so:obj/lib/libgenlock.so \
     $(LOCAL_PATH)/prebuilt/lib/libgenlock.so:system/lib/libgenlock.so \
@@ -358,6 +405,8 @@ PRODUCT_COPY_FILES += \
 # Prebuilt libraries that are needed for DRM playback
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
+    $(LOCAL_PATH)/prebuilt/vendor/lib/hw/power.qcom.so:system/vendor/lib/hw/power.qcom.so \
+    $(LOCAL_PATH)/prebuilt/vendor/lib/libdrmdecrypt.so:system/vendor/lib/libdrmdecrypt.so \
     $(LOCAL_PATH)/prebuilt/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
     $(LOCAL_PATH)/prebuilt/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
     $(LOCAL_PATH)/prebuilt/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so

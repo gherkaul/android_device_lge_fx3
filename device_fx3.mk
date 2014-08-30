@@ -287,7 +287,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/bin/usbhub_init:system/bin/usbhub_init \
     $(LOCAL_PATH)/prebuilt/bin/v4l2-qcamera-app:system/bin/v4l2-qcamera-app \
     $(LOCAL_PATH)/prebuilt/lib/hw/camera.msm8960.so:system/lib/hw/camera.msm8960.so \
-    $(LOCAL_PATH)/prebuilt/lib/hw/aduio.primary.mpq8064.so:system/lib/hw/audio.primary.mpq8064.so \
+    $(LOCAL_PATH)/prebuilt/lib/hw/audio.primary.mpq8064.so:system/lib/hw/audio.primary.mpq8064.so \
     $(LOCAL_PATH)/prebuilt/lib/hw/audio_policy.mpq8064.so:system/lib/hw/audio_policy.mpq8064.so \
     $(LOCAL_PATH)/prebuilt/lib/hw/audio_policy.msm8960.so:system/lib/hw/audio_policy.msm8960.so \
     $(LOCAL_PATH)/prebuilt/lib/hw/copybit.msm8960.so:system/lib/hw/copybit.msm8960.so \

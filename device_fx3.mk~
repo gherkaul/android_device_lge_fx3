@@ -313,7 +313,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/lib/libchromatix_s5k4e5ya_default_video.so:system/lib/libchromatix_s5k4e5ya_default_video.so \
     $(LOCAL_PATH)/prebuilt/lib/libchromatix_s5k4e5ya_preview.so:system/lib/libchromatix_s5k4e5ya_preview.so \
     $(LOCAL_PATH)/prebuilt/lib/libchromatix_s5k4e5ya_zsl.so:system/lib/libchromatix_s5k4e5ya_zsl.so \
-    $(LOCAL_PATH)/prebuilt/lib/libffmpeg.so:system/lib/libffmpeg.so \
     $(LOCAL_PATH)/prebuilt/lib/libhwcexternal.so:system/lib/libhwcexternal.so \
     $(LOCAL_PATH)/prebuilt/lib/libhwcservice.so:system/lib/libhwcservice.so \
     $(LOCAL_PATH)/prebuilt/lib/libmemalloc.so:system/lib/libmemalloc.so \

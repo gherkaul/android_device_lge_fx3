@@ -330,9 +330,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/lib/libOmxVenc.so:system/lib/libOmxVenc.so \
     $(LOCAL_PATH)/prebuilt/lib/liboverlay.so:system/lib/liboverlay.so \
     $(LOCAL_PATH)/prebuilt/lib/libqdutils.so:system/lib/libqdutils.so \
-    $(LOCAL_PATH)/prebuilt/lib/libstagefrighthw.so:system/lib/listagefrighthw.so \
-    $(LOCAL_PATH)/prebuilt/lib/libstagefright_soft_ddpdec.so:system/lib/listagefrightsoft_ddpdec.so \
-    $(LOCAL_PATH)/prebuilt/lib/libstagefright_soft_dtsdec.so:system/lib/listagefright_soft_dtsdec.so \
+    $(LOCAL_PATH)/prebuilt/lib/libstagefrighthw.so:system/lib/libstagefrighthw.so \
+    $(LOCAL_PATH)/prebuilt/lib/libstagefright_soft_ddpdec.so:system/lib/libstagefrightsoft_ddpdec.so \
+    $(LOCAL_PATH)/prebuilt/lib/libstagefright_soft_dtsdec.so:system/lib/libstagefright_soft_dtsdec.so \
     $(LOCAL_PATH)/prebuilt/lib/libacdbloader.so:system/lib/libacdbloader.so \
     $(LOCAL_PATH)/prebuilt/lib/libgenlock.so:obj/lib/libgenlock.so \
     $(LOCAL_PATH)/prebuilt/lib/libgenlock.so:system/lib/libgenlock.so \
